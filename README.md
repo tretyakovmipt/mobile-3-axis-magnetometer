@@ -11,9 +11,9 @@ As of October 2022, the total price of the setup is slightly above 70 USD, exclu
 
 1. I prefer to start with soldering the OLED display onto the board first, but it can be done after installing the board software. For some soldering tips see [https://learn.adafruit.com/adafruit-128x64-oled-featherwing/assembly](https://learn.adafruit.com/adafruit-128x64-oled-featherwing/assembly) . It is easier to start by soldering the pins to the display.
 
-![CCA850FE-72FB-44D7-AF89-5C08D1091412.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3270c3f1-6f64-46c5-adc2-5d147aba1b84/CCA850FE-72FB-44D7-AF89-5C08D1091412.jpeg)
+![Fig. 1](fig1.png)
 
-![86004217-4BB8-4AAD-8E20-7AC77B29BBD8.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/595edcd4-5223-4c27-9fc8-f2faf29c7174/86004217-4BB8-4AAD-8E20-7AC77B29BBD8.jpeg)
+![Fig. 2](fig2.png)
 
 1. Install the board firmware as described in [https://learn.adafruit.com/adafruit-stm32f405-feather-express/dfu-bootloader-details](https://learn.adafruit.com/adafruit-stm32f405-feather-express/dfu-bootloader-details) . I would do it in the following order:
     1. Download and install ****STM32CubeProg**** on your computer (if Windows OS)
@@ -22,16 +22,16 @@ As of October 2022, the total price of the setup is slightly above 70 USD, exclu
     4. Enable DFU bootloader mode by shorting the pins. I used slim alligator clips for that.
     5. Install the firmware by following STMCube instructions from the link above. A new drive should appear on your PC.
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c1de8193-f382-47eb-a757-ae8e006b4d56/Untitled.png)
+        ![Fig. 3](fig3.png)
         
 2. Download a software bundle corresponding to your firmware version from [https://circuitpython.org/libraries](https://circuitpython.org/libraries) .
 3. Move the following files to the **lib** folder
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/40d8152b-b099-412c-bce2-a42d089cf743/Untitled.png)
+![Fig. 4](fig4.png)
 
 Note that the above files might be specific to particular display and magnetometer models. For more information see [https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython](https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython) and [https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython](https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython) 
 
-1. In the main folder, open [code.py](http://code.py) with any text editor and update with the following code:
+1. In the main folder, open code.py with any text editor and update with the following code:
 
 ```python
 import time
@@ -120,6 +120,6 @@ while True:
 
 After you save the updated code, the display should start showing the magnetic field values.
 
-![7AB378B2-18E7-4D9A-821C-6200DB4CF496.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5903170f-4b61-49c8-80c7-c88672a7d768/7AB378B2-18E7-4D9A-821C-6200DB4CF496.jpeg)
+![Fig. 5](fig5.png)
 
 For information on calibration, see [https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration](https://learn.adafruit.com/adafruit-sensorlab-magnetometer-calibration) . We did not calibrate it, but a comparison with an expensive commercial hall probe showed excellent agreement.
