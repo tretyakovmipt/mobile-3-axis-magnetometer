@@ -1,5 +1,5 @@
 # mobile-3-axis-magnetometer
-This is a setup of a general-purpose magnetometer I assembled for my postdoctoral project at UCLA. The magnetometer measures all three components of the magnetic field vector in the range of $\pm4$ gauss ($\pm400$ uTesla) or $\pm16$ gauss ($\pm1600$ uT).
+This is a setup of a general-purpose magnetometer I assembled for my postdoctoral project at UCLA. The magnetometer measures all three components of the magnetic field vector in the range of $\pm4$ gauss ( $\pm400$ uTesla) or $\pm16$ gauss ( $\pm1600$ uT).
 
 # Parts
 
