@@ -24,12 +24,14 @@ As of October 2022, the total price of the setup is slightly above 70 USD, exclu
         
         ![Fig. 3](fig3.png)
         
+
+        
 2. Download a software bundle corresponding to your firmware version from [https://circuitpython.org/libraries](https://circuitpython.org/libraries) .
 3. Move the following files to the **lib** folder
 
 ![Fig. 4](fig4.png)
 
-Note that the above files might be specific to particular display and magnetometer models. For more information see [https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython](https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython) and [https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython](https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython) 
+Note that the above files might be specific to particular display and magnetometer models. For more information see [https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython](https://learn.adafruit.com/adafruit-128x64-oled-featherwing/circuitpython) and [https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython](https://learn.adafruit.com/lis3mdl-triple-axis-magnetometer/python-circuitpython). This repo contains lib folder and code.py specific to my device.
 
 1. In the main folder, open code.py with any text editor and update with the following code:
 
