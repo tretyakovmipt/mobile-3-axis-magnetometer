@@ -3,7 +3,10 @@ This is a setup of a general-purpose magnetometer I assembled for my postdoctora
 
 # Parts
 
-Here is [the list of all parts](https://www.adafruit.com/wishlists?wid=552330) from the adafruit website. In this setup, the magnetometer is driven by a microcontroller board from adafruit, but an Arduino or a Raspberry Pi can be used instead. I used an OLED display soldered directly onto the board to display the magnetic field values, but might not be needed in the case when data is sent directly to a computer via a USB cable. Also, there might be display options that do not require soldering. 
+Here is [the list of all parts](https://www.adafruit.com/wishlists?wid=552330) from the adafruit website (you need an account to access). 
+![Fig. 6](fig6.png)
+
+In this setup, the magnetometer is driven by a microcontroller board from adafruit, but an Arduino or a Raspberry Pi can be used instead. I used an OLED display soldered directly onto the board to display the magnetic field values, but might not be needed in the case when data is sent directly to a computer via a USB cable. Also, there might be display options that do not require soldering. 
 
 As of October 2022, the total price of the setup is slightly above 70 USD, excluding a USB-C cable and power adapter necessary to power the device unless it’s connected to a computer. The magnetometer can become truly portable with a rechargeable [battery](https://www.adafruit.com/product/1578), which is charged when the board is connected to a power source via USB. 
 
