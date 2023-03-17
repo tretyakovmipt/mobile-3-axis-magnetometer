@@ -57,7 +57,7 @@ displayio.release_displays()
 i2c = board.I2C()
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3C) # connect to the display
 sensor = adafruit_lis3mdl.LIS3MDL(i2c) # connect to the magnetometer
-
+sensor.range = adafruit_lis3mdl.Range.RANGE_16_GAUSS # set the measurement range to 16 G
 ########################
 #Set up the display
 
